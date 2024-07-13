@@ -1,4 +1,4 @@
-#set text(font: ("Palatino", "LXGW WenKai"), lang: "zh", region: "cn")
+#set text(font: ("Palatino", "Songti SC"), lang: "zh", region: "cn")
 #set enum(numbering: "1.a.i.")
 #show strong: underline
 
@@ -17,7 +17,7 @@
 
 注意到#text(blue)[蓝色]的部分及 ... 符号，这些操作都是由*元理论*展开的，而不包含在代数结构定义里。
 
-#strike[或者可以说是在定义一个 Set of $(\_ times \_ times \_)$? 所以它势必是在描述一堆挂着封闭运算和公理的特殊集合#footnote[这里面有 Set of Set 的问题所以显然不太对，我不知道该如何正确形式化但是先如此感性地理解]。]
+#strike[或者可以说是在定义一个 Set of $(\_ times \_ times \_)$? 所以它势必是在描述一堆挂着封闭运算和公理的特殊集合#footnote[这里面有 Set of Set 的问题所以显然不太对，我不知道该如何正确形式化但是这里我采用朴素集合论的直觉如此感性地理解]#footnote[qlbf: 存在一个神秘的集合论问题，关键词“本质小” i.e. 等价于某个小的东西但却处于一个更高的宇宙]。]
 
 === 例子：Group Algebra
 所有满足以下要求的(集合 $G$ $times$ 集合上封闭的运算 $dot$)的组合称为 Group Algebra:
@@ -45,7 +45,7 @@ Definition group: Type := { A: Type &
 ```
 
 或者，我们采用一个更直观的定义，让 group 通过它的基集合和运算索引
-#footnote[qlbf: 有一个非平凡的互转，参见 Arend 文档里的 anonymous extension 和 cooltt 的 extension type]
+#footnote[qlbf: 这可以自动化互转，参见 Arend 文档里的 anonymous extension 和 cooltt 的 extension type]
 ：
 
 ```ml
